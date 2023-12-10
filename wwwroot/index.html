@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #212529;
+            font-weight: bold;
+        }
+
+            a:hover {
+                color: #007bff;
+            }
+
+        #bookDetails {
+            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            #bookDetails p {
+                margin-bottom: 10px;
+            }
+
+        #newShoppingList {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            #newShoppingList input {
+                flex: 1;
+                margin-right: 10px;
+                padding: 8px;
+                border-radius: 4px;
+                border: 1px solid #ced4da;
+            }
+
+            #newShoppingList button {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+        #shoppingLists {
+            margin-top: 20px;
+        }
+
+            #shoppingLists button {
+                background-color: #dc3545;
+                color: #fff;
+                padding: 8px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                #shoppingLists button:hover {
+                    background-color: #c82333;
+                }
+
+            #shoppingLists .complete {
+                background-color: #28a745;
+                color: #fff;
+            }
+
+            #shoppingLists .incomplete {
+                background-color: #ffc107;
+                color: #212529;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Shopping List</h1>
+
+        <div id="newShoppingList">
+            <input type="text" id="shoppingListName" placeholder="Enter Shopping List Name">
+            <button onclick="createShoppingList()">Create Shopping List</button>
+        </div>
+
+        <h2>Shopping Lists</h2>
+        <ul id="shoppingLists"></ul>
+
+        <h2>Shopping List Details</h2>
+        <div id="shoppingListDetails">
+            <p>No shopping list selected.</p>
+        </div>
+    </div>
+
+    <script src="JavaScript/app.js"></script>
+</body>
+</html>

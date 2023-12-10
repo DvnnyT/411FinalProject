@@ -1,0 +1,32 @@
+{
+  "Name": "Annie",
+  "Budget": 50.00,
+  "Completed": true,
+  "Items": [
+    {
+      "Name": "Milk",
+      "Price": 2.99,
+      "Selected": false,
+      "Description": "1 gallon of whole milk"
+    },
+    {
+      "Name": "Bread",
+      "Price": 1.99,
+      "Selected": true,
+      "Description": "Whole wheat bread"
+    },
+    {
+      "Name": "Eggs",
+      "Price": 1.49,
+      "Selected": false,
+      "Description": "A dozen large eggs"
+    },
+    {
+      "Name": "Apples",
+      "Price": 3.99,
+      "Selected": true,
+      "Description": "5 lbs of Fuji apples"
+    }
+  ]
+
+}
